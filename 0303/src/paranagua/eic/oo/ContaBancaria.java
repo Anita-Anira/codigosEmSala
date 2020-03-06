@@ -18,6 +18,9 @@ public class ContaBancaria {
         saldo = saldo + qtde;
     }
 
-
+    public String toString(){
+        String str = "(Número:"+numero+"; Agencia:"+agencia+"; Saldo:"+saldo+"; Cliente:"+cliente+")";
+        return str;
+    }
 
 }

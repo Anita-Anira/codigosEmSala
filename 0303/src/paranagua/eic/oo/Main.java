@@ -17,14 +17,18 @@ public class Main {
         conta1.saldo = 10.0;
         conta1.cliente = "Chico";
 
+        System.out.println("#######Estado do Objeto####");
+        System.out.println(conta1.toString());
+
         //estado do objeto
-        System.out.println("Número:"+conta1.numero);
-        System.out.println("Agência:"+conta1.agencia);
-        System.out.println("Cliente:"+conta1.cliente);
-        System.out.println("Saldo:"+conta1.saldo);
 
 
+        conta1.sacar(10.5);
+        System.out.println("#######Estado do Objeto####");
+        System.out.println(conta1.toString());
 
-
+        conta1.depositar(100);
+        System.out.println("#######Estado do Objeto####");
+        System.out.println(conta1.toString());
     }
 }
